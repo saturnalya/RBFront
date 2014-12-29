@@ -17,7 +17,8 @@
     <div class="content clearfix">
       <!-- Page Navigation -->
       <div id="nav">
-      <IMG SRC="resources/saturn.jpg" ALT="Saturn">
+       <h2>Navigation</h2>
+      <IMG SRC="resources/saturn.jpg" ALT="Saturn" width="250">
         <h2>Contents</h2>
 
         <ul>          
@@ -76,3 +77,12 @@
     </div>
   </body>
 </html>
+
+<script type="text/javascript">
+  function replaceName() {
+    var myNewName = window.prompt('Pick a new name!');
+    document.getElementById('user-name').innerHTML = myNewName;
+  }
+
+  document.onclick = replaceName;
+</script>
